@@ -75,11 +75,17 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->login()) {
+                Yii::$app->session->setFlash('success', sprintf("%s %s",'Welcome back. ', Yii::$app->user->identity->getUsername()));
+                return $this->goBack();
+            } else {
+                $this->layout = 'login';
+                Yii::$app->session->setFlash('danger', 'Username / password salah.');
+                return $this->render('login', ['model' => $model]);
+            }
         } else {
-            $model->password = '';
-
+            $this->layout = 'login';
             return $this->render('login', [
                 'model' => $model,
             ]);

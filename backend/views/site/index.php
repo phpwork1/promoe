@@ -6,7 +6,7 @@ $this->title = 'Promoe Application';
 ?>
 
 <div class="jumbotron">
-    <h1>WebPage is currently under construction!</h1>
+    <h1>This is Backend!</h1>
 </div>
 
 <div class="body-content">

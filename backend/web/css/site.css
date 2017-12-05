@@ -120,8 +120,27 @@ a.desc:after {
     outline: none;
 }
 
+.nav .breadcrumb {
+    margin: 0 7px;
+}
+
+.btn-group{
+    margin-top:7px;
+}
+
+@media (min-width: 768px) {
+    .nav .breadcrumb {
+        float: left;
+        margin: 7px 10px;
+    }
+}
+
 #footer{
     bottom:0;
     width:100%;
     position:absolute;
+}
+
+.error-top{
+    margin:100px
 }

@@ -11,5 +11,6 @@ namespace common\base;
 
 class AppLabels
 {
-
+    const LOCATION = 'Location';
+    const CATEGORY = 'Category';
 }

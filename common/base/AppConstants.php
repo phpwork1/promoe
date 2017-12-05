@@ -17,7 +17,6 @@ class AppConstants
 
     // SESSIONS
     const SES_WEB_PROFILE = 'S_WEB_PROFILE';
-    const SES_WORKING_PLAN_DETAIL = 'S_WORKING_PLAN';
 
     // APP CONFIG
     const DELIMITER = '#|#';
@@ -28,5 +27,16 @@ class AppConstants
     //    const APP_BACKEND_BASE_URL = '/adminpanel';
     const APP_FRONTEND_BASE_URL = '/promoe'; // localhost
     //    const APP_FRONTEND_BASE_URL = '/';
+    const APP_API_BASE_URL = '/promoe/api'; // localhost
+    //    const APP_FRONTEND_BASE_URL = '/api';
     const IMG_RESPONSIVE = 'img-responsive';
+
+    //API V1 CONFIG
+
+    //MESSAGE
+    const ERR_INTEGRITY_CONSTRAINT_VIOLATION = 'Database Integrity Violation';
+    const MESSAGE_SAVE_SUCCESS = 'Data is successfully saved';
+    const MESSAGE_SAVE_UPDATE = 'Data is successfully updated';
+    const MESSAGE_SAVE_DELETE = 'Data is successfully deleted';
+
 }
